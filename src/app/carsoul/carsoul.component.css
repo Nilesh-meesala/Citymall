@@ -1,0 +1,46 @@
+/* Set carousel container size */
+#carouselExampleIndicators {
+  width: 100%;
+  max-width: 800px; /* Adjust as needed */
+  margin: auto; /* Center the carousel */
+}
+
+/* Style carousel indicators */
+.carousel-indicators li {
+  background-color: #999;
+}
+
+.carousel-indicators .active {
+  background-color: #007bff; /* Change to your preferred active indicator color */
+}
+
+/* Style carousel images */
+.carousel-item img {
+  width: 100%;
+  height: auto;
+}
+
+/* Style carousel controls */
+.carousel-control-prev,
+.carousel-control-next {
+  width: 5%;
+  background-color: rgba(0, 0, 0, 0.5); /* Adjust as needed */
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: #fff; /* Change to your preferred control icon color */
+}
+
+.carousel-control-prev-icon::before,
+.carousel-control-next-icon::before {
+  background-color: #fff; /* Change to your preferred control icon color */
+}
+
+/* Hide arrow text on smaller screens */
+@media (max-width: 768px) {
+  .carousel-control-prev,
+  .carousel-control-next {
+    display: none;
+  }
+}

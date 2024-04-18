@@ -1,0 +1,49 @@
+.navbar {
+  position: relative;
+  background-image: url('https://png.pngtree.com/thumb_back/fw800/background/20221105/pngtree-supermarket-blur-inside-blurred-food-photo-image_20404068.jpg');
+  background-size: cover;
+  background-position: left;
+  font-family: Arial, sans-serif;
+  padding: 10px 0;
+}
+
+.navbar::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: inherit;
+  background-size: cover;
+  background-position: center;
+  filter: blur(10px);
+  z-index: -1;
+}
+
+.navbar-brand {
+  font-size: medium;
+  font-weight: bolder;
+  text-transform: uppercase;
+  font-style: italic;
+}
+
+.navbar-nav .nav-item {
+  margin-right: 10%;
+}
+
+.navbar-nav .nav-link {
+  color: black;
+  font-size: medium;
+  font-weight: bolder;
+  transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+  color: goldenrod;
+}
+
+.form-control {
+  width: 300px;
+  margin-right: 10px;
+}

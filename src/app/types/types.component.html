@@ -1,0 +1,52 @@
+
+<!-- 
+
+<div class="row">   
+<div class="col-6 col-xl-4 col-lg-4 col-md-4 col-sm-4" *ngFor="let prod of products">
+    <div class="card" style="width:300px; text-align: center; ">
+
+        <img src="{{prod.imgsrc}}" class="card-img" style="width:250px;">
+        
+        <div class="card-body">
+            <h3 class="card-title">{{prod.prodName}}</h3>
+            <p class="card-text">{{prod.description}}</p>
+                <p class="card-text">{{prod.price | currency:'INR'}}</p>
+            </div>
+            <div>
+            <button class="btn btn-primary">add to Cart</button>
+           </div>
+
+</div>
+</div>
+
+</div> -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+
+
+  <div class="row">
+     
+      <div class="col-6 col-xl-4 col-lg-4 col-md-4 col-sm-4" *ngFor="let prod of products;">
+      <div class="card" style="width:300px; text-align: center;">
+        <div class="card-body">
+          <a class="nav-link" routerLink="/product">
+            <!-- <li class="login">
+              <a class="nav-link" routerLink="/login">LOGOUT</a>
+            </li> -->
+            <img src="{{prod.imgsrc}}" class="card-img" style="width:250px;">
+            <h3 class="card-title" style="color:black;">{{prod.prodName}}</h3>
+            <p class="card-text" style="color:black;">{{prod.price | currency:'INR'}}</p>
+          </a>
+        </div>
+        <div>  
+          <a href="#" class="btn btn-primary" style="color:white;">
+            <span class="glyphicon glyphicon-shopping-cart"></span>   
+            add to Cart
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
